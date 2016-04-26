@@ -10,40 +10,7 @@
 <project name="JavaApplication1" default="default" basedir=".">
     <description>Builds, tests, and runs the project JavaApplication1.</description>
     <import file="nbproject/build-impl.xml"/>
-
-    <property name="tst-dir" location="test"/>
-    <property name="TALK" value="true"/>
-    <path id="classpath.base">
-    </path>
-    <path id="classpath.test">
-        <pathelement location="/Projects/Java/Lib/junit.jar"/>
-        <pathelement location="${tst-dir}"/>
-        <path refid="classpath.base"/>
-    </path>
-    
-    <target name="compile-test">
-        <javac srcdir="${tst-dir}"
-            verbose="${TALK}"
-            >
-            <classpath refid="classpath.test"/>
-        </javac>
-    </target>
-    <target name="clean-compile-test">
-        <delete verbose="${TALK}">
-            <fileset dir="${tst-dir}" includes="**/*.class"/>
-        </delete>
-    </target>
-    <target name="test" depends="compile-test">
-        <junit>
-            <classpath refid="classpath.test"/>
-            <formatter type="brief" usefile="false"/>
-            <test name="ApplicationTest"/>
-        </junit>
-    </target>
-    <target name="all" depends="test" />
-    <target name="clean" depends="clean-compile-test"/>
     <!--
-         
 
     There exist several targets which are by default empty and which can be 
     used for execution of your tasks. These targets are usually executed 

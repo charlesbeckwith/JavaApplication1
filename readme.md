@@ -1,5 +1,6 @@
 #JavaAppplication1
 One of my first java programs written 6 years ago being uploaded for posterity. Implementation of selectsort.
+Created using NetBeans IDE, to give an example of how old this is.
 
 ##Building
 Build using ant
