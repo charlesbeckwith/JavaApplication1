@@ -8,15 +8,15 @@ Build using ant
 If you don't already have ant installed on your machine it can be installed using *brew*
 > brew install ant
 
-'''bash
+```bash
 ant compile jar run
-'''
+```
 
 ##Running
 After building, go to the dist directory and run
-'''bash
+```bash
 java -jar JavaApplication1.jar
-'''
+```
 
 
 
